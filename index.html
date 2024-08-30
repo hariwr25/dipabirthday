@@ -2,387 +2,583 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Happy Birthday Dzabbe Diva Aszahra</title>
-  <meta content="Celebrate Dzabbe Diva Aszahra's special day with a stylish birthday card and gallery" name="description">
-  <meta content="birthday, celebration, gallery" name="keywords">
+    <title>Happy Birthday Dzabbe Diva Aszahra</title>
+    <meta content="Celebrate Dzabbe Diva Aszahra's special day with a stylish birthday card and gallery" name="description">
+    <meta content="birthday, celebration, gallery" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f7f8fc;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
+        .header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            animation: slideDown 1s ease-out;
+        }
 
-    .header {
-      background-color: #ffffff;
-      padding: 20px;
-      border-bottom: 1px solid #ddd;
-      position: fixed;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
 
-    .header h1 {
-      font-size: 28px;
-      font-weight: 700;
-      color: #333;
-      margin: 0;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
 
-    #hero {
-      background-color: #282a36;
-      padding: 150px 20px;
-      text-align: center;
-      color: #ffffff;
-    }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
 
-    #hero h2 {
-      font-size: 56px;
-      font-weight: 700;
-      margin-bottom: 15px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
+        #hero {
+            background-image: url('assets/img/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 20px;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInHero 2s ease-out;
+        }
 
-    #hero p {
-      font-size: 22px;
-      margin-bottom: 40px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+        @keyframes fadeInHero {
+            0% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
 
-    .btn-get-started {
-      background-color: #ff79c6;
-      color: #ffffff;
-      padding: 12px 40px;
-      font-size: 18px;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 15px rgba(255, 121, 198, 0.2);
-    }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-    .btn-get-started:hover {
-      background-color: #ff92d0;
-      box-shadow: 0 15px 20px rgba(255, 121, 198, 0.4);
-      transform: translateY(-3px);
-    }
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
 
-    #gallery {
-      padding: 60px 0;
-      background-color: #ffffff;
-    }
+        #hero h2 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            z-index: 2;
+            position: relative;
+            animation: bounceIn 2s ease;
+        }
 
-    .gallery-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 0 20px;
-    }
+        #hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 2;
+            position: relative;
+            animation: fadeInText 2s ease 1s forwards;
+            opacity: 0;
+        }
 
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 15px;
-      transition: transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+        @keyframes bounceIn {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                transform: translateY(0);
+            }
 
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      transition: transform 0.3s ease;
-      border-radius: 15px;
-    }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
 
-    .gallery-item:hover img {
-      transform: scale(1.05);
-    }
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
 
-    .gallery-item:hover {
-      transform: translateY(-10px);
-    }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-    .gallery-item .gallery-links {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      border-radius: 15px;
-    }
+        .btn-get-started {
+            background-color: #ff4757;
+            color: #ffffff;
+            padding: 12px 40px;
+            font-size: 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 15px rgba(255, 71, 87, 0.3);
+            z-index: 2;
+            position: relative;
+        }
 
-    .gallery-item:hover .gallery-links {
-      opacity: 1;
-    }
+        .btn-get-started:hover {
+            background-color: #ff6b81;
+            box-shadow: 0 15px 20px rgba(255, 71, 87, 0.4);
+            transform: translateY(-3px);
+        }
 
-    .gallery-links i {
-      font-size: 36px;
-      color: #ffffff;
-    }
+        .btn-get-started:after {
+            content: '\f105';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-left: 10px;
+            opacity: 0;
+            transform: translateX(-10px);
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
 
-    #footer {
-      background-color: #282a36;
-      color: #f8f8f2;
-      padding: 40px 0;
-      text-align: center;
-      border-top: 1px solid #444;
-      margin-top: 50px;
-    }
+        .btn-get-started:hover:after {
+            opacity: 1;
+            transform: translateX(0);
+        }
 
-    #footer a {
-      color: #ff79c6;
-      text-decoration: none;
-      font-weight: 600;
-    }
+        #gallery {
+            padding: 80px 0;
+            background-color: #ffffff;
+        }
 
-    #footer a:hover {
-      text-decoration: underline;
-    }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
 
-    .scroll-top {
-      background-color: #ff79c6;
-      color: #ffffff;
-      border-radius: 50%;
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 450px; /* Taller height for long cards */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+        }
 
-    .scroll-top:hover {
-      background-color: #ff92d0;
-    }
+        .gallery-item:nth-child(3n + 1) {
+            animation: fadeInCard 1s ease forwards;
+        }
 
-    #preloader {
-      background-color: #f8f9fa;
-    }
+        .gallery-item:nth-child(3n + 2) {
+            animation: slideInFromLeft 1s ease forwards;
+        }
 
-    @media (min-width: 992px) {
-      .gallery-item {
-        transition: all 0.3s ease-in-out;
-      }
+        .gallery-item:nth-child(3n + 3) {
+            animation: slideInFromRight 1s ease forwards;
+        }
 
-      .gallery-item:hover {
-        transform: translateY(-5px) scale(1.05);
-      }
-    }
+        @keyframes fadeInCard {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
 
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn ease-in 1;
-      animation-fill-mode: forwards;
-      animation-duration: 1s;
-    }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
+        @keyframes slideInFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
 
-      100% {
-        opacity: 1;
-      }
-    }
-  </style>
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio while covering the area */
+            transition: transform 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item .gallery-links {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .gallery-links {
+            opacity: 1;
+        }
+
+        .gallery-links i {
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        #footer {
+            background-color: #1a1a1a;
+            color: #f8f8f2;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #444;
+            margin-top: 50px;
+            animation: fadeInFooter 1s ease-out;
+        }
+
+        @keyframes fadeInFooter {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #footer a {
+            color: #ff4757;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+
+        .scroll-top {
+            background-color: #ff4757;
+            color: #ffffff;
+            border-radius: 50%;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 999;
+            animation: bounceScrollTop 2s infinite;
+        }
+
+        @keyframes bounceScrollTop {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .scroll-top:hover {
+            background-color: #ff6b81;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                height: 300px;
+            }
+
+            .gallery-item:nth-child(3n + 1) {
+                animation: fadeInCardMobile 1s ease forwards;
+            }
+
+            .gallery-item:nth-child(3n + 2) {
+                animation: slideInFromBottom 1s ease forwards;
+            }
+
+            .gallery-item:nth-child(3n + 3) {
+                animation: slideInFromTop 1s ease forwards;
+            }
+
+            @keyframes fadeInCardMobile {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes slideInFromBottom {
+                0% {
+                    opacity: 0;
+                    transform: translateY(100%);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes slideInFromTop {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-100%);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fade-in">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <h1 class="text-center">Dipa's Birthday</h1>
-      </a>
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center fade-in">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2>Happy Birthday <span>Dzabbe Diva Aszahra</span></h2>
-          <p>Thank you for your love and support. I wish you all the best. Happy birthday.</p>
-          <a href="https://hariwr25.github.io/Cake/" class="btn-get-started">CLICK ME</a>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <h1 class="text-center">Dipa's Birthday</h1>
+            </a>
         </div>
-      </div>
-    </div>
-  </section><!-- End Hero Section -->
+    </header><!-- End Header -->
 
-  <main id="main">
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery fade-in">
-      <div class="container gallery-container">
-        <!-- 10 Gallery cards -->
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="Gallery 1">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="Gallery 2">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="Gallery 3">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="Gallery 4">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="Gallery 5">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-5.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="Gallery 6">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-7.JPG" class="img-fluid" alt="Gallery 7">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-7.JPG" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="Gallery 8">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" alt="Gallery 9">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-9.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-
-        <div class="gallery-item" data-aos="zoom-in">
-          <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="Gallery 10">
-          <div class="gallery-links">
-            <a href="assets/img/gallery/gallery-10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
-        <div class="gallery-item" data-aos="zoom-in">
-            <img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" alt="Gallery 8">
-            <div class="gallery-links">
-              <a href="assets/img/gallery/gallery-11.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2>Happy Birthday <span>Dzabbe Diva Aszahra</span></h2>
+                    <p>Thank you for your love and support. I wish you all the best. Happy birthday.</p>
+                    <a href="https://hariwr25.github.io/Cake/" class="btn-get-started">CLICK ME</a>
+                </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="gallery-item" data-aos="zoom-in">
-            <img src="assets/img/gallery/gallery-12.jpg" class="img-fluid" alt="Gallery 8">
-            <div class="gallery-links">
-              <a href="assets/img/gallery/gallery-12.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+        </div>
+    </section><!-- End Hero Section -->
+
+    <main id="main">
+
+        <!-- ======= Gallery Section ======= -->
+        <section id="gallery" class="gallery">
+            <div class="container gallery-container">
+                <!-- Gallery items -->
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="Gallery 1">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="Gallery 2">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="Gallery 3">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="Gallery 4">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="Gallery 5">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-5.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="Gallery 6">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-7.JPG" class="img-fluid" alt="Gallery 7">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-7.JPG" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="Gallery 8">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" alt="Gallery 9">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-9.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="assets/img/gallery/gallery-16.JPG" class="img-fluid" alt="Gallery 8">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-16.JPG" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+                
+
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="Gallery 10">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" alt="Gallery 8">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-11.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="assets/img/gallery/gallery-12.jpg" class="img-fluid" alt="Gallery 8">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-12.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="assets/img/gallery/gallery-13.jpg" class="img-fluid" alt="Gallery 8">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="assets/img/gallery/gallery-14.jpg" class="img-fluid" alt="Gallery 8">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="assets/img/gallery/gallery-15.jpg" class="img-fluid" alt="Gallery 8">
+                    <div class="gallery-links">
+                        <a href="assets/img/gallery/gallery-15.jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    </div>
+                </div><!-- End Gallery Item -->
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="gallery-item" data-aos="zoom-in">
-            <img src="assets/img/gallery/gallery-13.jpg" class="img-fluid" alt="Gallery 8">
-            <div class="gallery-links">
-              <a href="assets/img/gallery/gallery-13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+        </section><!-- End Gallery Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Dipaaaaaa 21' Birthday</span></strong>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="gallery-item" data-aos="zoom-in">
-            <img src="assets/img/gallery/gallery-14.jpg" class="img-fluid" alt="Gallery 8">
-            <div class="gallery-links">
-              <a href="assets/img/gallery/gallery-14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <div class="credits">
+                Designed by <a href="#">Hari Wahyu Ramadhan</a>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="gallery-item" data-aos="zoom-in">
-            <img src="assets/img/gallery/gallery-15.jpg" class="img-fluid" alt="Gallery 8">
-            <div class="gallery-links">
-              <a href="assets/img/gallery/gallery-15.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-            </div>
-          </div><!-- End Gallery Item -->
-      </div>
-    </section><!-- End Gallery Section -->
+        </div>
+    </footer><!-- End Footer -->
 
-  </main><!-- End #main -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Dipaaaaaa 21' Birthday</span></strong>
-      </div>
-      <div class="credits">
-        Designed by <a href="#">Hari Wahyu Ramadhan</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Custom JS -->
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
 
 </body>
 
