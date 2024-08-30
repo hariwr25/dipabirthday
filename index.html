@@ -23,14 +23,13 @@
 
     <!-- Custom CSS -->
     <style>
-       body {
+     body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(135deg, #2b2b2b 0%, #8c7851 100%);
     color: #333;
     margin: 0;
     padding: 0;
 }
-
 .header {
     background-color: rgba(26, 26, 26, 0.85);
     padding: 20px;
@@ -62,7 +61,7 @@
         }
 
         #hero {
-    background: linear-gradient(135deg, rgba(106, 17, 203, 0.8) 0%, rgba(37, 117, 252, 0.8) 100%), url('assets/img/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(43, 43, 43, 0.8) 0%, rgba(140, 120, 81, 0.8) 100%), url('assets/img/hero-bg.jpg') no-repeat center center/cover;
     padding: 150px 20px;
     text-align: center;
     color: #ffffff;
@@ -95,27 +94,32 @@
         }
 
         #hero h2 {
-            font-size: 56px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            z-index: 2;
-            position: relative;
-            animation: bounceIn 2s ease;
-        }
+    font-size: 56px;
+    font-weight: 600; /* Kurangi ketebalan font */
+    margin-bottom: 15px;
+    letter-spacing: 2px; /* Sedikit kurangi jarak antar huruf */
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+    animation: bounceIn 2s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+}
 
-        #hero p {
-            font-size: 22px;
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            z-index: 2;
-            position: relative;
-            animation: fadeInText 2s ease 1s forwards;
-            opacity: 0;
-        }
+#hero p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    position: relative;
+    animation: fadeInText 2s ease 1s forwards;
+    opacity: 0;
+    font-weight: 400; /* Kurangi ketebalan font */
+    font-style: italic; /* Tambahkan efek miring */
+    color: #f1f1f1; /* Gunakan warna yang lebih terang */
+}
+
 
         @keyframes bounceIn {
             0%, 20%, 40%, 60%, 80%, 100% {
